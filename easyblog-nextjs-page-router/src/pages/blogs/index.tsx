@@ -15,7 +15,6 @@ const config: EasyBlogConfig = {
 export const getServerSideProps = withListServerSideProps({
   config,
   type: "list",
-
   displayOptions: {
     showThumbnail: true,
     showReadingTime: true,
@@ -29,8 +28,6 @@ export const getServerSideProps = withListServerSideProps({
 }).getServerSideProps;
 
 export default function BlogsPage(props: InferGetStaticPropsType<typeof getServerSideProps>) {
-
-  console.log("+++", props)
   
   return (
     <Layout>

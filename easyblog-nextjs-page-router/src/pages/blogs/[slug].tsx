@@ -11,6 +11,11 @@ const config = {
   apiUrl: process.env.EASYBLOG_API_URL!
 };
 
+// Export both getStaticProps and getStaticPaths
+const { getStaticProps, getStaticPaths } = withPageStaticProps({
+  config
+});
+
 export default function BlogPost(props: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Layout>
@@ -18,10 +23,5 @@ export default function BlogPost(props: InferGetStaticPropsType<typeof getStatic
     </Layout>
   );
 }
-
-// Export both getStaticProps and getStaticPaths
-const { getStaticProps, getStaticPaths } = withPageStaticProps({
-  config
-});
 
 export { getStaticProps, getStaticPaths };

@@ -9,8 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@weekend-studio/easyblog-next": "^0.0.16",
-    "@weekend-studio/easyblog-components": "^0.0.18",
+    "@weekend-studio/easyblog-next": "^0.0.37",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
